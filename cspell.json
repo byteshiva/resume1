@@ -1,0 +1,55 @@
+// cSpell Settings
+// spell-checker:disable
+{
+    "version": "0.2",
+    // language - current active spelling language
+    "language": "en",
+    // words - list of words to be always considered correct
+    "words": [
+        "9JZ0Y2GCJME4QRW9",
+        "adoc",
+        "ANB9AQDUBZ",
+        "BNPL",
+        "Bowes",
+        "Corrigall",
+        "couponing",
+        "Coursera",
+        "docdir",
+        "Entra",
+        "fontsdir",
+        "Gitflow",
+        "githubusercontent",
+        "greenlit",
+        "Instacart",
+        "Liquibase",
+        "MEAJXDNAXQ",
+        "mkdirp",
+        "Nuxt",
+        "Passbolt",
+        "pgmigrate",
+        "pprof",
+        "R5JF2BGZTM",
+        "showtitle",
+        "streetsidesoftware",
+        "stretchr",
+        "Sydenham",
+        "themesdir",
+        "tsmerge",
+        "UIkit",
+        "visualstudio",
+        "vsmarketplacebadge"
+    ],
+    // flagWords - list of words to be always considered incorrect
+    // This is useful for offensive words and common spelling errors.
+    // For example "hte" should be "the"
+    "flagWords": [
+        "hte"
+    ],
+    "ignorePaths": [
+        "Gemfile",
+        "Gemfile.lock",
+        "*.pdf",
+        "fonts/",
+        "themes/"
+    ]
+}

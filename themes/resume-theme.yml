@@ -1,0 +1,88 @@
+extends: default
+
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/font/
+font:
+  catalog:
+    M+ 1mn:
+      normal: mplus1mn-regular-subset.ttf
+      bold: mplus1mn-bold-subset.ttf
+      italic: mplus1mn-italic-subset.ttf
+      bold_italic: mplus1mn-bold_italic-subset.ttf
+    M+ 1p Fallback:
+      normal: mplus1p-regular-fallback.ttf
+      bold: mplus1p-regular-fallback.ttf
+      italic: mplus1p-regular-fallback.ttf
+      bold_italic: mplus1p-regular-fallback.ttf
+    Noto Emoji:
+      normal: notoemoji-subset.ttf
+      bold: notoemoji-subset.ttf
+      italic: notoemoji-subset.ttf
+      bold_italic: notoemoji-subset.ttf
+    Noto Sans:
+      normal: notosans-regular-subset.ttf
+      bold: notosans-bold-subset.ttf
+      italic: notosans-italic-subset.ttf
+      bold_italic: notosans-bold_italic-subset.ttf
+    Noto Serif:
+      normal: notoserif-regular-subset.ttf
+      bold: notoserif-bold-subset.ttf
+      italic: notoserif-italic-subset.ttf
+      bold_italic: notoserif-bold_italic-subset.ttf
+  fallbacks:
+    - Noto Emoji
+
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/page/
+page:
+  background_color: ffffff
+  layout: portrait
+  size: A4
+
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/base/
+base:
+  border_color: eeeeee
+  border_width: 1
+  font_color: 333333
+  #font_family: M+ 1p Subset
+  #font_family: Noto Sans
+  font_family: Noto Serif
+  font_size: 10
+  text-align: justify
+
+link:
+  font_color: 3399cc
+
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/heading/
+heading:
+  align: left
+  font_family: $base_font_family
+  font_style: bold
+  h1_font_size: floor($base_font_size * 1.5)
+  h1_text_align: left
+  h2_font_size: floor($base_font_size * 1.25)
+  h3_font_size: round($base_font_size * 1)
+  h4_font_size: $base_font_size_large
+  h5_font_size: $base_font_size
+  h6_font_size: $base_font_size_small
+  line_height: 1
+  margin_top: 4
+  margin_bottom: 4
+
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/description-list/
+# https://docs.asciidoctor.org/asciidoc/latest/lists/description/
+description_list:
+  term_font_style: bold
+
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/list/
+list:
+  indent: 10
+  item_spacing: 1
+
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/table/
+table:
+  background_color: $page_background_color
+  border_color: 000000
+  border_width: $base_border_width
+  cell_padding: [1, 2]
+  font-size: 9
+  grid-color: eeeeee
+  head_font_style: bold
